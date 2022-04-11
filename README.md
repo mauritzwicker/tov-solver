@@ -3,8 +3,6 @@ Modelling the internal structure of neutron stars through the Tolman-Oppenheimer
 
 
 - TO DO:
-- - requirements.txt file
-- - README.mc file
-- - this main page intro !
+- - README.md file
 - - upload pdf from both reports
 - - ...?
