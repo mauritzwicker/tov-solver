@@ -10,12 +10,12 @@ Modelling the internal structure of neutron stars through the Tolman-Oppenheimer
 
 ## To Run
 1. Install requirements
-2. Set User-Input paramters in $user_input.py$
-3. Run $main.py$
+2. Set User-Input paramters in *user_input.py*
+3. Run *main.py*
 
 ## Analysis
-1. Set User-Input paramters in $/analysis/analysis_user_input.py$
-2. Run $/analysis/run_analysis.py$
+1. Set User-Input paramters in */analysis/analysis_user_input.py*
+2. Run */analysis/run_analysis.py*
 
 ## Example Output
 <img src="other/terminal-output-SIM.png" width = 400>
