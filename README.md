@@ -2,7 +2,8 @@
 Modelling the internal structure of neutron stars through the Tolman-Oppenheimer-Volkoff Equation.
 
 ## Useful Guides
-- Code Guide: \other\TOV_CodeGuide_WickerMauritz.pdf
+- [Code Guide](other/TOV_CodeGuide_WickerMauritz.pdf)
+- [Project Report](other/TOV_Solver_WickerMauritz.pdf)
 - Project Report: \other\TOV_Solver_WickerMauritz.pdf
 
 ## Code Overview
