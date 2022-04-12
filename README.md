@@ -21,6 +21,6 @@ Numerically solving the Tolman-Oppenheimer-Volkoff qquations to model the intern
 <img src="other/terminal-output-SIM.png" width = 400>
 <img src="other/examplerun-MPRhoProfiles2sims.png" width = 700>
 
-Lecture: Numerical Techniques for Modeling Relativistic Hydrodynamics
-Ruprecht Karl University of Heidelberg
+Numerical Techniques for Modeling Relativistic Hydrodynamics <br/>
+Ruprecht Karl University of Heidelberg <br/>
 Department of Physics and Astronomy
