@@ -1,5 +1,5 @@
 # tov-solver
-Modelling the internal structure of neutron stars through the Tolman-Oppenheimer-Volkoff Equation.
+Numerically solving the Tolman-Oppenheimer-Volkoff qquations to model the internal structure of neutron stars
 
 ## Useful Guides
 - [Code Guide](other/TOV_CodeGuide_WickerMauritz.pdf)
@@ -20,3 +20,7 @@ Modelling the internal structure of neutron stars through the Tolman-Oppenheimer
 ## Example Output
 <img src="other/terminal-output-SIM.png" width = 400>
 <img src="other/examplerun-MPRhoProfiles2sims.png" width = 700>
+
+Lecture: Numerical Techniques for Modeling Relativistic Hydrodynamics
+Ruprecht Karl University of Heidelberg
+Department of Physics and Astronomy
