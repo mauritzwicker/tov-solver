@@ -1,8 +1,22 @@
 # tov-solver
 Modelling the internal structure of neutron stars through the Tolman-Oppenheimer-Volkoff Equation.
 
+## Useful Guides
+- Code Guide: \other\TOV_CodeGuide_WickerMauritz.pdf
+- Project Report: \other\TOV_Solver_WickerMauritz.pdf
 
-- TO DO:
-- - README.md file -- https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
-- - upload pdf from both reports
-- - ...?
+## Code Overview
+<img src="other/high-level-overview.png" width = 200>
+
+## To Run
+1. Install requirements
+2. Set User-Input paramters in $user_input.py$
+3. Run $main.py$
+
+## Analysis
+1. Set User-Input paramters in $/analysis/analysis_user_input.py$
+2. Run $/analysis/run_analysis.py$
+
+## Example Output
+<img src="other/terminal-output-SIM.png" width = 200>
+<img src="other/examplerun-MPRhoProfiles2sims.png" width = 200>
