@@ -6,7 +6,7 @@ Modelling the internal structure of neutron stars through the Tolman-Oppenheimer
 - Project Report: \other\TOV_Solver_WickerMauritz.pdf
 
 ## Code Overview
-<img src="other/high-level-overview.png" width = 200>
+<img src="other/high-level-overview.png" width = 700>
 
 ## To Run
 1. Install requirements
@@ -18,5 +18,5 @@ Modelling the internal structure of neutron stars through the Tolman-Oppenheimer
 2. Run $/analysis/run_analysis.py$
 
 ## Example Output
-<img src="other/terminal-output-SIM.png" width = 200>
-<img src="other/examplerun-MPRhoProfiles2sims.png" width = 200>
+<img src="other/terminal-output-SIM.png" width = 400>
+<img src="other/examplerun-MPRhoProfiles2sims.png" width = 700>
