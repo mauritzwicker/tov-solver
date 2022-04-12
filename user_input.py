@@ -40,8 +40,11 @@ class UserInput:
         # m_c := central mass (should be zero)
         self.m_c = 0
 
+        # r0 := the smalles radius to start at (r->0)
+        self.r0 = 1e-8
+
         # m_break := the Mass at which we break off
-        self.m_break = 1000 * self.const.M_sun # g
+        self.m_break = 100 * self.const.M_sun # g
 
         # r_break := radius at which to break
         self.r_break = 1 * self.const.R_sun
@@ -50,9 +53,6 @@ class UserInput:
         self.grid = int(4e6)
         # stepsize := the stepsize in the grid
         self.stepsize = 100
-
-        # r0 := the smalles radius to start at (r->0)
-        self.r0 = 1e-8
 
         # r_type := the way we want to define our stepwise iteration
         self.r_type = 'lin'
@@ -64,7 +64,7 @@ class UserInput:
         self.defined_coutoff = ['Mass', 'Radius']
 
         # which rk_method to use
-        self.rk_method = 'rk1'
+        self.rk_method = 'rk4'
 
         # Whether to check user input of not
         self.check_inputs = True
@@ -77,6 +77,6 @@ class UserInput:
         # Where to save file
         self.save_path = './results/'
         # What name to save file under
-        self.save_name = 'tov-solver_sim1'
+        self.save_name = 'tov-solver_sim2'
         # Whether to overwrite saved files
         self.save_over = False

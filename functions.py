@@ -2,7 +2,7 @@
 name: functions
 date: 27.01.2022
 author: @mauritzwicker
-repo: ../
+repo: /tov-solver
 
 Purpose: To hold tov-solver functions
 
@@ -19,7 +19,7 @@ import os
 
 def check_userinput(const, defa, usr):
     '''
-    function to chekc user inputs and assign default values
+    function to check user inputs and assign default values
 
     - Inputs:
         const := constant values object
@@ -321,6 +321,12 @@ def dmdr(r, rho, eps=0, c=3e10):
 def check_Sim_Done(tov, usr):
     '''
     To check if the Mass of the Star has been reached at the end of the simulation
+
+    - Inputs:
+        tov := tov object
+        usr := user-input object
+    - Returns:
+        tov := tov object with check for a completed simulation
     '''
 
     if (tov.Mstar == 0 or tov.Rstar == 0 or tov.Mstarind == -1):
@@ -331,7 +337,14 @@ def check_Sim_Done(tov, usr):
 
 def check_MRstar(tov, usr, i):
     '''
-    To check if the Mass of the Star has been reached -> defined Mstar
+    To check if the Mass of the Star has been reached at each step -> defined Mstar
+
+    - Inputs:
+        tov := tov object
+        usr := user-input object
+        i := the index of simulation we are at
+    - Returns:
+        tov := tov object with check for a completed simulation at i
     '''
 
     if usr.cut_off == 'Mass':
@@ -726,19 +739,18 @@ def save_res(usr1, const, tov1):
     To save results from RK-run
 
     - Inputs:
-        usr := user input Object
+        usr1 := user input Object
         const := constants Object
         tov1 := TOVmodel Object
     - Outputs:
         save pickle file with results
     '''
-
     fullfilename = usr1.save_path + usr1.save_name + '.pkl'
     if not os.path.exists(usr1.save_path):
         print('Save-Direcoty does not exist -> creating directory to save')
         os.makedirs(usr1.save_path)
     else:
-        if usr1.save_name + '.pkl' in [x for x in os.listdir(path)]:
+        if usr1.save_name + '.pkl' in [x for x in os.listdir(usr1.save_path)]:
             print('***** WARNING: File already exists in directory *****')
             if usr1.save_over:
                 print('Saving File {0} -> old file removed'.format(usr1.save_name + '.pkl'))
@@ -771,9 +783,6 @@ def save_res(usr1, const, tov1):
     except:
         print('Unable to save data into\n{0}'.format(fullfilename))
     return
-
-
-
 
 def graph_res(usr1, const, tov1):
     '''
@@ -816,7 +825,7 @@ def graph_res(usr1, const, tov1):
 
 def run_results_output(usr, const, tov):
     '''
-    To print the results of the RK-run in terminal
+    To print (and coordinate saving/plotting) the results of the RK-run in terminal
 
     - Inputs:
         usr := user input Object

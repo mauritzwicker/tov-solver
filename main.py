@@ -49,6 +49,8 @@ def main():
     # create user object
     usr_unchecked = UserInput(const)
 
+    print()
+
     # check user object or assign as default
     if usr_unchecked.use_default:
         usr1 = defa
